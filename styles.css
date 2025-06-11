@@ -60,7 +60,7 @@ li {
 }
 
 .nav-link:hover {
-    color: #ff00aa;
+    color: rgb(255, 0, 85) ;
 }
 
 .content {
