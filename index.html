@@ -16,14 +16,15 @@
     <div class="container">
         <div class="navbar">
             <img class="logo" src="./img/logo.png" alt="Logo da Playstation Store">
-            <nav>
-                <ul>
-                    <li><a class="nav-link" href="#">Consoles</a></li>
-                    <li><a class="nav-link" href="#">Acessórios</a></li>
-                    <li><a class="nav-link" href="#">Controles</a></li>
-                    <li><a class="nav-link" href="#">Outros</a></li>
+            <nav >
+                <ul id="nav-links">
+                    <li class="nav-li"><a class="nav-link" href="#">Consoles</a></li>
+                    <li class="nav-li"><a class="nav-link" href="#">Acessórios</a></li>
+                    <li class="nav-li"><a class="nav-link" href="#">Controles</a></li>
+                    <li class="nav-li"><a class="nav-link" href="#">Outros</a></li>
                 </ul>
             </nav>
+            <img src="./img/menu.png" onclick="showMenu()" alt="Menu" class="menu-icon">
         </div>
         <div class="content">
             <div class="product-info">
@@ -52,5 +53,18 @@
 
 
 </body>
+
+<script>
+    const menuList = document.getElementById('nav-links');
+    menuList.style.maxHeight= '0px';
+
+    function showMenu () {
+        if (menuList.style.maxHeight == '0px'){
+            menuList.style.maxHeight = '120px'
+        } else {
+            menuList.style.maxHeight = '0px';
+        }
+    }
+</script>
 
 </html>
